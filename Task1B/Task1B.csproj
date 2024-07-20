@@ -7,6 +7,7 @@
     <Nullable>enable</Nullable>
     <BaseOutputPath>D:\VSworkspace\CSharpEducation.Practice</BaseOutputPath>
     <Configurations>Debug;Release;CheckIn</Configurations>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
 </Project>
