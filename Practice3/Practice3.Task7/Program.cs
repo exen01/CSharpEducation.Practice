@@ -1,46 +1,46 @@
 ﻿namespace Practice3.Task7
 {
-    internal class Program
+  internal class Program
+  {
+    enum Month
     {
-        enum Months
-        {
-            January,
-            February,
-            March,
-            April,
-            May,
-            June,
-            July,
-            August,
-            September,
-            October,
-            November,
-            December
-        }
-
-        static void Main(string[] args)
-        {
-            Console.WriteLine("В январе " + NumberOfDays(Months.January) + " дней");
-        }
-
-        static int NumberOfDays(Months month)
-        {
-            return month switch
-            {
-                Months.January => 31,
-                Months.February => 28,
-                Months.March => 31,
-                Months.April => 30,
-                Months.May => 31,
-                Months.June => 30,
-                Months.July => 31,
-                Months.August => 31,
-                Months.September => 30,
-                Months.October => 31,
-                Months.November => 30,
-                Months.December => 31,
-                _ => 0,
-            };
-        }
+      January,
+      February,
+      March,
+      April,
+      May,
+      June,
+      July,
+      August,
+      September,
+      October,
+      November,
+      December
     }
+
+    static void Main(string[] args)
+    {
+      Console.WriteLine("В январе " + NumberOfDays(Month.January) + " дней");
+    }
+
+    static int NumberOfDays(Month month)
+    {
+      return month switch
+      {
+        Month.January => 31,
+        Month.February => 28,
+        Month.March => 31,
+        Month.April => 30,
+        Month.May => 31,
+        Month.June => 30,
+        Month.July => 31,
+        Month.August => 31,
+        Month.September => 30,
+        Month.October => 31,
+        Month.November => 30,
+        Month.December => 31,
+        _ => 0,
+      };
+    }
+  }
 }
