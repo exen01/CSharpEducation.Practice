@@ -14,5 +14,10 @@
     {
       Console.WriteLine("Animal is sleeping");
     }
+
+    public virtual void MakeSound()
+    {
+      Console.WriteLine("Some generic animal sound");
+    }
   }
 }

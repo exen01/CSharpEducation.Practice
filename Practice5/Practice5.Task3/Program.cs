@@ -4,7 +4,13 @@
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Hello, World!");
+      Animal animal = new Animal();
+      Dog dog = new Dog();
+      Cat cat = new Cat();
+
+      animal.MakeSound();
+      dog.MakeSound();
+      cat.MakeSound();
     }
   }
 }
