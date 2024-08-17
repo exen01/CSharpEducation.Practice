@@ -23,6 +23,14 @@
           animalItem.MakeSound();
         }
       }
+
+      Eagle eagle = new Eagle();
+      List<IFlyable> birds = [parrot, eagle];
+
+      foreach (var bird in birds)
+      {
+        bird.Fly();
+      }
     }
   }
 }
